@@ -17,6 +17,14 @@ jar -xvf demo.war
 
 5.压缩目录成war
 jar -cvf a.war jekins_deploy_demo/
+tar -zcvf /home/xahot.tar.gz /xahot
+
+6.centos7 启动mongodb
+sudo systemctl start mongod
+
+
+7.删除5天前的日志
+find /data/log/task_schedule/ -mtime +5 -name "*.log*" -exec rm -rf {} \;
 
 
 
